@@ -11,6 +11,8 @@ import UIKit
 @IBDesignable // Draws it in interface builder
 class FaceView: UIView {
     
+    // Public API
+    
     @IBInspectable
     var scale: CGFloat = 0.9
     
@@ -25,6 +27,8 @@ class FaceView: UIView {
     
     @IBInspectable
     var mouthCurvature: Double = -0.5 // 1.0 is full smile and -1.0 is full frown
+    
+    // Private Implementation
     
     private var skullRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) / 2 * scale
