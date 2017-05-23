@@ -57,7 +57,7 @@
             </objects>
             <point key="canvasLocation" x="6" y="445"/>
         </scene>
-        <!--Emotions View Controller-->
+        <!--Emotions-->
         <scene sceneID="9fs-Cw-iGe">
             <objects>
                 <viewController id="Dd4-ZB-UpS" customClass="EmotionsViewController" customModule="FaceIt" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,23 +105,42 @@
                             <constraint firstItem="68h-D8-S55" firstAttribute="centerY" secondItem="iox-bL-Q7M" secondAttribute="centerY" id="uzK-Ke-BVZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Emotions" id="Mij-0D-N9g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n20-MZ-fHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="-281"/>
+            <point key="canvasLocation" x="944.79999999999995" y="-281.10944527736132"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Jow-Dt-4bH">
             <objects>
                 <splitViewController id="fYo-ge-fzq" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="Dd4-ZB-UpS" kind="relationship" relationship="masterViewController" id="KRU-tj-Tsb"/>
+                        <segue destination="KAb-G8-eDL" kind="relationship" relationship="masterViewController" id="KRU-tj-Tsb"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="jow-RG-rOW"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uu-OG-x63" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-847" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="10t-fa-cZm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KAb-G8-eDL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dtH-i6-caU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dd4-ZB-UpS" kind="relationship" relationship="rootViewController" id="JK5-eu-KM4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zti-Fm-HTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="-281.10944527736132"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
