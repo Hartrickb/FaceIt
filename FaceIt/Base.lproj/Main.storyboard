@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fYo-ge-fzq">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TXq-ra-5YL" customClass="FaceView" customModule="FaceIt" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
@@ -49,13 +49,14 @@
                             <constraint firstItem="TXq-ra-5YL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vCI-i9-VNh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="b8l-Qt-wov"/>
                     <connections>
                         <outlet property="faceView" destination="TXq-ra-5YL" id="Nju-zl-nG4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="445"/>
+            <point key="canvasLocation" x="944.79999999999995" y="444.82758620689657"/>
         </scene>
         <!--Emotions-->
         <scene sceneID="9fs-Cw-iGe">
@@ -66,18 +67,18 @@
                         <viewControllerLayoutGuide type="bottom" id="BNf-GN-GcY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iox-bL-Q7M">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="68h-D8-S55">
-                                <rect key="frame" x="118.5" y="223.5" width="138" height="220"/>
+                                <rect key="frame" x="91" y="274" width="138" height="220"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzP-7L-Jqb">
                                         <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Sad"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="sad" id="NEt-y0-Ri6"/>
+                                            <segue destination="5rw-y8-2Ux" kind="showDetail" identifier="sad" id="NEt-y0-Ri6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC6-2W-z3Y">
@@ -85,7 +86,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Happy"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="happy" id="wCA-bM-5A4"/>
+                                            <segue destination="5rw-y8-2Ux" kind="showDetail" identifier="happy" id="wCA-bM-5A4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHJ-MO-b45">
@@ -93,7 +94,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Worried"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="worried" id="bSz-mT-M9Q"/>
+                                            <segue destination="5rw-y8-2Ux" kind="showDetail" identifier="worried" id="bSz-mT-M9Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -117,7 +118,7 @@
                 <splitViewController id="fYo-ge-fzq" sceneMemberID="viewController">
                     <connections>
                         <segue destination="KAb-G8-eDL" kind="relationship" relationship="masterViewController" id="KRU-tj-Tsb"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="jow-RG-rOW"/>
+                        <segue destination="5rw-y8-2Ux" kind="relationship" relationship="detailViewController" id="jow-RG-rOW"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uu-OG-x63" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,8 +143,26 @@
             </objects>
             <point key="canvasLocation" x="5.5999999999999996" y="-281.10944527736132"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EDX-16-FsL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5rw-y8-2Ux" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Nu-ci-wpf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Olx-Ph-w8P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Lf-KO-1fX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="444.82758620689657"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bSz-mT-M9Q"/>
+        <segue reference="wCA-bM-5A4"/>
     </inferredMetricsTieBreakers>
 </document>
